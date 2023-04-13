@@ -1,0 +1,12 @@
+package android.graphics;
+/* loaded from: classes.dex */
+public class PathEffect {
+    long native_instance;
+
+    private static native void nativeDestructor(long j);
+
+    protected void finalize() throws Throwable {
+        nativeDestructor(this.native_instance);
+        this.native_instance = 0L;
+    }
+}
